@@ -15,7 +15,7 @@ cat <<EOF > ~/config.json
     },
     "inbounds": [
         {
-            "port": 80,
+            "port": 443,
             "protocol": "vmess",
             "settings": {
                 "clients": [
