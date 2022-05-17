@@ -15,7 +15,7 @@ cat <<EOF > ~/config.json
     },
     "inbounds": [
         {
-            "port": 80,
+            "port": 8080,
             "protocol": "vmess",
             "settings": {
                 "clients": [
@@ -23,7 +23,6 @@ cat <<EOF > ~/config.json
                         "id": "$id"
                     }
                 ],
-                "decryption": "none"
             },
             "streamSettings": {
                 "network": "ws",
@@ -33,7 +32,7 @@ cat <<EOF > ~/config.json
     "outbounds": [
         {
             "protocol": "freedom"
-			"settings": {}
+	    "settings": {}
         }
     ]
 }
