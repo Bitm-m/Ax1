@@ -30,9 +30,6 @@ cat <<EOF > ~/config.json
             }
         }
     ],
-	
-	
-	
     "outbounds": [
         {
             "protocol": "freedom"
