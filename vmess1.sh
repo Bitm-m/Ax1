@@ -5,7 +5,7 @@ wget -N https://raw.githubusercontent.com/Misaka-blog/AX/main/web
 chmod +x ./web
 
 if [[ -z $id ]]; then
-    id="1eb6e917-774b-4a84-aff6-b058577c60a5"
+    id="e319396c-c501-43a1-ace3-7d4ae2dc2b82"
 fi
 
 cat <<EOF > ~/config.json
@@ -23,16 +23,23 @@ cat <<EOF > ~/config.json
                         "id": "$id"
                     }
                 ],
+                "decryption": "none"
             },
             "streamSettings": {
                 "network": "ws",
+		 "wsSettings": {
+		"path": "/"
+		}
             }
         }
     ],
+	
+	
+	
     "outbounds": [
         {
             "protocol": "freedom"
-	    "settings": {}
+			"settings": {}
         }
     ]
 }
